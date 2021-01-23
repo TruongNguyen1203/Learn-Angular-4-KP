@@ -8,4 +8,7 @@ import {Component} from '@angular/core'; //import component tu angular core
   styleUrls: ['./word.component.css']
 })
 
-export class WordComponent{}
+export class WordComponent{
+  en = 'Hello';
+  vn = 'Xin chao'
+}
