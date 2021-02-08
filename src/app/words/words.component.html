@@ -1,3 +1,8 @@
+<input placeholder="English" [(ngModel)]="newEn">
+<input placeholder="Vietnamese" [(ngModel)]="newVn">
+<br><br>
+<button (click) = "addWord();">Add new word</button>
+
 <div *ngFor="let word of arrWords">
   <h4 [ngStyle]="{color : word.memorized ? 'green':'red'}">
     {{word.en}}
