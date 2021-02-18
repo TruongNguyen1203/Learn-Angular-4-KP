@@ -46,4 +46,6 @@ export class WordsComponent implements OnInit {
     const dkXemChuaNho = this.filterStatus==='XEM_CHUA_NHO' && !memorized;
     return dkXemTatCa || dkXemDaNho || dkXemChuaNho;
   }
+
+
 }
