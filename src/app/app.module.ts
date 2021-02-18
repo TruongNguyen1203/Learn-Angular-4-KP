@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { StructComponent } from './struct/struct.component';
 import { WordsComponent } from './words/words.component';
 import { PersonComponent } from './person/person.component';
+import { ListPersonComponent } from './list-person/list-person.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PersonComponent } from './person/person.component';
     UserFormComponent,
     StructComponent,
     WordsComponent,
-    PersonComponent
+    PersonComponent,
+    ListPersonComponent
   ],
   imports: [
     BrowserModule,
