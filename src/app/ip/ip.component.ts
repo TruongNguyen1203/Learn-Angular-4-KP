@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { IpService } from './ip.service';
 
 @Component({
@@ -10,14 +9,13 @@ import { IpService } from './ip.service';
 export class IpComponent implements OnInit {
   ip: Object | undefined;
 
-  constructor(private ipService: IpService) {
+  constructor(private ipService: IpService) {}
+
+
+  ngOnInit(): void {
     this.ipService.getIp()
     .then(res => this.ip = res);
 
-
-   }
-
-  ngOnInit(): void {
   }
 
 
