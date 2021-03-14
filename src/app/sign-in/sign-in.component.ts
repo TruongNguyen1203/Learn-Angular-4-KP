@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
-  email ='';
-  password = '';
+
 
 
   constructor() { }
@@ -18,6 +17,7 @@ export class SignInComponent implements OnInit {
 
   onSubmit(formSignIn:any){
     console.log(formSignIn.value);
+    throw new Error("Form is invalid");
   }
 
 }
